@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color System */
+  --color-light-primary: #9C375F;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #BB5077;
+  --color-light-on-primary-container: #FFFBFF;
+  --color-light-secondary: #695394;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #CEB5FE;
+  --color-light-on-secondary-container: #594383;
+  --color-light-tertiary: #0F6B20;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #308536;
+  --color-light-on-tertiary-container: #F7FFF1;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #93000A;
+  --color-light-background: #FFF8F8;
+  --color-light-on-background: #23191C;
+  --color-light-surface: #FFF8F8;
+  --color-light-surface-dim: #E8D6D9;
+  --color-light-surface-bright: #FFF8F8;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #FFF0F2;
+  --color-light-surface-container: #FCE9ED;
+  --color-light-surface-container-high: #F6E4E7;
+  --color-light-surface-container-highest: #F0DEE1;
+  --color-light-on-surface: #23191C;
+  --color-light-surface-variant: #F7DCE2;
+  --color-light-on-surface-variant: #544247;
+  --color-light-outline: #877177;
+  --color-light-outline-variant: #DAC0C6;
+  --color-light-inverse-surface: #382E30;
+  --color-light-inverse-on-surface: #FFECF0;
+  --color-light-inverse-primary: #FFB1C8;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  /* Spacing Gutters */
+  --spacing-gutter-xs: 4px;
+  --spacing-gutter-sm: 8px;
+  --spacing-gutter-md: 16px;
+  --spacing-gutter-lg: 24px;
+  --spacing-gutter-xl: 32px;
+  --spacing-section: 72px;
+  --spacing-page-margin: 24px;
+
+  /* Font Families */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-title: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Rubik", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+
+  /* Typography Scale */
+  --text-display-lg: 52px;
+  --text-display-lg--line-height: 60px;
+  --text-display-lg--letter-spacing: -1px;
+  --text-display-lg--font-weight: 700;
+
+  --text-display-lg-mobile: 32px;
+  --text-display-lg-mobile--line-height: 40px;
+  --text-display-lg-mobile--letter-spacing: -0.5px;
+  --text-display-lg-mobile--font-weight: 700;
+
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.5px;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--letter-spacing: -0.25px;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.2px;
+  --text-headline-md--font-weight: 600;
+
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 28px;
+  --text-title-lg--letter-spacing: 0px;
+  --text-title-lg--font-weight: 600;
+
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-title-md--letter-spacing: 0px;
+  --text-title-md--font-weight: 600;
+
+  --text-body-lg: 17px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--letter-spacing: 0px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--letter-spacing: 0px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.1px;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.4px;
+  --text-label-md--font-weight: 600;
+
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.5px;
+  --text-label-sm--font-weight: 500;
+
+  /* Transition Durations & Curves */
+  --transition-duration-state-change: 150ms;
+  --transition-duration-surface-enter: 250ms;
+  --transition-duration-surface-exit: 180ms;
+
+  --ease-state-change: ease-out;
+  --ease-surface-enter: cubic-bezier(0.2, 0, 0, 1);
+  --ease-surface-exit: cubic-bezier(0.3, 0, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
